@@ -1,4 +1,4 @@
-# FarTutors — FastAPI Website
+# Medha Tutors — FastAPI Website
 
 This is a Python-powered website using FastAPI + Jinja2 + HTML/CSS.
 
