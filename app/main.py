@@ -6,7 +6,7 @@ from fastapi.staticfiles import StaticFiles
 
 BASE_DIR = Path(__file__).resolve().parent
 
-app = FastAPI(title="Sahil Sharma Tutoring")
+app = FastAPI(title="FarTutors")
 app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")
 templates = Jinja2Templates(directory=BASE_DIR / "templates")
 
