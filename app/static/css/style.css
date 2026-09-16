@@ -92,9 +92,44 @@ section{padding:85px 0}
 #careers p {
     color: #475467;
 }
-.booking-card{padding:35px;display:flex;justify-content:space-between;align-items:center;gap:25px}
-.booking-card h3{margin:0;font-size:24px}
-.booking-card p{color:var(--muted);margin:5px 0 0}
+.booking-card {
+    display: grid;
+    grid-template-columns: 125px minmax(0, 1fr) 70px 120px;
+    column-gap: 25px;
+    align-items: center;
+
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+
+    padding: 28px;
+    margin-top: 0;
+}
+
+.booking-card h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.booking-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.booking-card .booking-price {
+    color: var(--text);
+    white-space: nowrap;
+    text-align: right;
+}
+
+.booking-card .button {
+    width: 120px;
+    min-height: 64px;
+    text-align: left;
+}
 footer{background:var(--navy);color:#c8d2e5;padding:27px 0;font-size:13px}
 .footer-inner{display:flex;justify-content:space-between}
 @media(max-width:800px){
@@ -207,4 +242,89 @@ footer{background:var(--navy);color:#c8d2e5;padding:27px 0;font-size:13px}
     .university-grid {
         grid-template-columns: 1fr;
     }
+}
+/* Navigation Dropdown */
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    font: inherit;
+    color: #475467;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.dropdown-button:hover {
+    color: var(--blue);
+}
+
+.dropdown-arrow {
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 210px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(16,24,40,.12);
+    padding: 8px;
+    z-index: 20;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 13px;
+    border-radius: 8px;
+    color: #475467;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background: var(--bg);
+    color: var(--blue);
+}
+
+/* Show dropdown when hovering */
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Align booking/session cards */
+
+.session-card {
+    display: grid;
+    grid-template-columns: 125px 1fr 60px 120px;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.session-card h3 {
+    margin: 0;
+}
+
+.session-card p {
+    margin: 0;
+}
+
+.session-card .price {
+    margin: 0;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.session-card .button {
+    width: 120px;
 }
