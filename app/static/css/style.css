@@ -334,3 +334,8 @@ footer{background:var(--navy);color:#c8d2e5;padding:27px 0;font-size:13px}
 .session-card .button {
     width: 120px;
 }
+.brand img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
