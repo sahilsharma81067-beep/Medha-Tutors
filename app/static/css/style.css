@@ -66,10 +66,32 @@ section{padding:85px 0}
 .includes{display:grid;gap:9px;margin:20px 0 25px}
 .includes div{font-size:15px}
 .includes span{font-weight:900;margin-right:7px}
-.dark{background:var(--navy);color:#fff}
-.dark p{color:#c8d2e5}
-.light{color:#9fbcff}
-.booking{background:var(--pale)}
+/* Section backgrounds */
+
+.about {
+    background: #fff;
+}
+
+.feedback {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.booking {
+    background: var(--bg);
+    color: var(--text);
+}
+
+#careers {
+    background: #fff;
+    color: var(--text);
+}
+
+.feedback p,
+.booking p,
+#careers p {
+    color: #475467;
+}
 .booking-card{padding:35px;display:flex;justify-content:space-between;align-items:center;gap:25px}
 .booking-card h3{margin:0;font-size:24px}
 .booking-card p{color:var(--muted);margin:5px 0 0}
@@ -94,3 +116,19 @@ footer{background:var(--navy);color:#c8d2e5;padding:27px 0;font-size:13px}
     height: auto;
     display: block;
 }
+.feedback {
+    background: #f8fafc !important;
+}
+
+.booking {
+    background: #f8fafc !important;
+}
+
+#ourteam {
+    background: #fff !important;
+}
+
+#careers {
+    background: #fff !important;
+}
+
