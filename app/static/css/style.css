@@ -131,4 +131,43 @@ footer{background:var(--navy);color:#c8d2e5;padding:27px 0;font-size:13px}
 #careers {
     background: #fff !important;
 }
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 35px;
+}
 
+.team-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(16,24,40,.05);
+}
+
+.team-card-content h3 {
+    margin: 0 0 6px;
+    font-size: 24px;
+    letter-spacing: -.03em;
+}
+
+.team-role {
+    color: var(--blue) !important;
+    font-weight: 750;
+    margin: 0 0 22px;
+}
+
+.team-card p {
+    color: #475467;
+}
+
+.team-card strong {
+    color: var(--text);
+}
+
+@media(max-width:800px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
