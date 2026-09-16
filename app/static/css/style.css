@@ -89,8 +89,8 @@ footer{background:var(--navy);color:#c8d2e5;padding:27px 0;font-size:13px}
 }
 
 .hero-logo img {
-    width: 420px;
-    max-width: 80%;
+    width: 600px;
+    max-width: 100%;
     height: auto;
     display: block;
 }
