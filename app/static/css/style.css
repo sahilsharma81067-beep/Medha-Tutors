@@ -481,7 +481,7 @@ footer{background:var(--navy);color:#c8d2e5;padding:27px 0;font-size:13px}
 @media (max-width: 800px) {
     .brand img {
         width: auto !important;
-        height: 40px !important;
-        max-height: 40px !important;
+        height: 35px !important;
+        max-height: 35px !important;
     }
 }
