@@ -19,9 +19,9 @@
         <div class="nav-links">
 
     <div class="dropdown">
-        <button class="dropdown-button">
-            Menu <span>▾</span>
-        </button>
+       <button class="dropdown-button" type="button" onclick="toggleMenu()">
+    Menu <span>▾</span>
+</button>
 
         <div class="dropdown-menu">
             <a href="#about">About</a>
@@ -43,7 +43,6 @@
   <header class="hero">
     <div class="container hero-grid">
       <div>
-        <div class="eyebrow">ONE-TO-ONE ONLINE TUTORING</div>
         <h1>Education</h1>
         <h1>Advice</h1>
         <h1>Opportunity</h1>
@@ -175,6 +174,7 @@
                     </p>
             </p>
         </div>
+        <h3>Academic and Student Support</h3>
 
         <div class="team-grid">
 
@@ -206,7 +206,9 @@
                         Further Mathematics (GCSE) <br>
                         Statistics (GCSE to A-Level) <br>
                         Economics (GCSE) 
-                </div>
+                    <p></p>
+                        <strong>Find Sahil on LinkedIn</strong><br>
+                        https://www.linkedin.com/in/sahilsharma81067/
             </div>
            <div class="team-card">
                 <div class="team-card-content">
@@ -229,8 +231,32 @@
                     <p></p>
                         <strong>Expertise</strong><br>
                         Ayushman's expertise lies in guiding students through the university application process, with a 
-                        focus on potential career paths and opportunities. He is particularly skilled in helping students identify their strengths and interests, and aligning them with suitable university courses and programs.
-                </div>  
+                        focus on potential career paths and opportunities. He is particularly skilled in helping students identify their strengths and interests, and aligning them with suitable university courses and programs
+                        in the US.
+                    <p></p>
+                        <strong>Find Ayushman on LinkedIn</strong><br>
+                        https://www.linkedin.com/in/ayushmansingh1604/
+            </div>
+        </div>
+        <h3>Management</h3><br>
+        <div class="team-card">
+                <div class="team-card-content">
+                    <h3>Shivani Sharma</h3>
+
+                    <p class="team-role">Head of Marketing and Recruitment</p>
+
+                    <p>
+                        <strong>Education</strong><br>
+                        BA History and Politics of the Americas @ University College London
+                    </p>
+                    <p>
+                        <strong>Experience</strong><br>
+                        Shivani has previous experience in operations and marketing, 
+                        being a part of Medha Tutors since its inception.
+                    </p>
+                    <p>
+                        <strong>Find Shivani on LinkedIn</strong><br>
+                        https://www.linkedin.com/in/shivani-sharma-1912a92b6/
       </section>
       <section id="university" class="university">
     <div class="container">
@@ -451,5 +477,11 @@
       <div>Online Tutoring · UK</div>
     </div>
   </footer>
+  <script>
+function toggleMenu() {
+    const menu = document.querySelector('.dropdown-menu');
+    menu.classList.toggle('show');
+}
+</script>
 </body>
 </html>

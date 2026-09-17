@@ -301,12 +301,6 @@ footer{background:var(--navy);color:#c8d2e5;padding:27px 0;font-size:13px}
     background: var(--bg);
     color: var(--blue);
 }
-
-/* Show dropdown when hovering */
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
 /* Align booking/session cards */
 
 .session-card {
@@ -481,7 +475,80 @@ footer{background:var(--navy);color:#c8d2e5;padding:27px 0;font-size:13px}
 @media (max-width: 800px) {
     .brand img {
         width: auto !important;
-        height: 35px !important;
-        max-height: 35px !important;
+        height: 30px !important;
+        max-height: 30px !important;
     }
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    background: transparent;
+    border: none;
+    padding: 10px 0;
+    margin: 0;
+    color: #475467;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dropdown-button:hover {
+    color: var(--blue);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 230px;
+
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 8px;
+
+    box-shadow: 0 15px 35px rgba(16,24,40,.15);
+
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 11px 13px;
+    color: #475467;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.dropdown-menu a:hover {
+    background: #f8fafc;
+    color: var(--blue);
+}
+@media (max-width: 800px) {
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .dropdown-menu {
+        position: fixed;
+        top: 64px;
+        right: 18px;
+        width: calc(100vw - 36px);
+        max-width: 300px;
+    }
+
+    .dropdown-menu a {
+        padding: 14px 15px;
+        font-size: 15px;
+    }
+
 }
